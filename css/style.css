@@ -1,15 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.MainSec {
+  display: fixed;
+  height: 100%;
+  width: 100%;
+}
+.MainSecText p {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+.MainSecText {
+  position:  fixed;
+  left: calc(50% - 7cm);
+  top: 15%;
+}
+div.circle {
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  width: 5cm; 
+  height: 5cm;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  text-align: center;
+  top: 20%;
+  left: calc(45% - 2.5cm);
+
+}
+.MainButtons {
+  position: fixed;
+  top: calc(20% + 1cm)  ;
+  left:calc(50% + 7cm) ;
+  
+}
+button {
+  width: 300px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  font-size: 17pt;
+  margin-top: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width:1px) and (max-width:1200px) {
+  .MainSecText {
+    left: calc(50% - 4cm);
+    top: 20%;
+  }
+  div.circle {
+    top: 25%;
+    left: calc(50% - 2.5cm);
+  
+  }
+  .MainButtons {
+    top: calc(60%)  ;
+    left:calc(50% - 150px) ;
+    
+  }
+}
+/* body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 99vw;
+}
 div.circle {
     border-radius: 50%;
     background: red;
-    width: 5cm; 
-    height: 5cm;
+    width: 188.97637795px; 
+    height: 188.97637795px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display:flex;
     align-items: center;
     align-self: center;
-    margin: 0 auto;
+    margin: 0 0;
     transition: 0.5s ease-in-out;
+    
 
   }
   section {
@@ -52,15 +135,4 @@ div.circle {
     padding: 10px;
     cursor: pointer;
   }
-  @media screen and (min-width:1px) and (max-width:776px) {
-    .MainSec {
-      flex-direction: column;
-    }
-    .MainSecText {
-      align-self: center;
-      margin-bottom: 20px;
-    }
-    .MainButtons {
-      margin-top: 20px;
-    }
-  }
+   */
